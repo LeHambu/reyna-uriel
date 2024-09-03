@@ -26,36 +26,36 @@
             var n2;
             var resp;
             var op;
-            op = prompt("Elige la operacion a realizar");    
+            op = prompt("Elige la operacion a realizar");
             switch(op){
-                case "suma":
-                    n1 = prompt("ingresa valor 1");
+                case "Sumar":
+                    n1 = prompt("Ingresa un numero");
                     n1 = parseInt(n1);
-                    n2 = prompt("ingrese valor 2");
+                    n2 = prompt("Ingresa otro numero");
                     n2 = parseInt(n2);
                     resp = n1 + n2;
                     document.getElementById("respuesta").innerHTML = n1+" + "+n2+" = "+ resp;
                     break
-                case "resta":
-                    n1 = prompt("ingresa valor 1");
+                case "Restar":
+                    n1 = prompt("Ingresa un numero");
                     n1 = parseInt(n1);
-                    n2 = prompt("ingrese valor 2");
+                    n2 = prompt("Ingresa otro numero");
                     n2 = parseInt(n2);
                     resp = n1 - n2;
                     document.getElementById("respuesta").innerHTML = n1+" - "+n2+" = "+ resp;
                     break
-                case "multiplicacion":
-                    n1 = prompt("ingresa valor 1");
+                case "Multiplicar":
+                    n1 = prompt("Ingresa un numero");
                     n1 = parseInt(n1);
-                    n2 = prompt("ingrese valor 2");
+                    n2 = prompt("Ingresa otro numero");
                     n2 = parseInt(n2);
                     resp = n1 * n2;
                     document.getElementById("respuesta").innerHTML = n1+" * "+n2+" = "+ resp;
                     break
-                case "division":
-                    n1 = prompt("ingresa valor 1");
+                case "Dividir":
+                    n1 = prompt("Ingresa un numero");
                     n1 = parseInt(n1);
-                    n2 = prompt("ingrese valor 2");
+                    n2 = prompt("Ingresa otro numero");
                     n2 = parseInt(n2);
                     resp = n1 / n2;
                     document.getElementById("respuesta").innerHTML = n1+" / "+n2+" = "+ resp;
@@ -130,14 +130,5 @@
             document.getElementById("suma").innerHTML = "La suma de los numeros menores de " + numero+ " es: "+ suma;
         }) 
     </script>
-
-
-
-
-
-
-
-
-
 
 </body>
