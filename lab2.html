@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+    <title>Laboratorio 2</title>
+</head>
+
+<body>
+    <h1>¿Qué es Javascript y en qué se asemeja a Java?</h1>
+    <p>¿Primero que es JavaScript? JavaScript es un lenguaje de programación que los 
+        desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar 
+        fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones
+     de JavaScript pueden mejorar la experiencia del usuario de un sitio web.Y en ¿Que se 
+    asemejan Java y JavaScript? Java y Javascript son, ambos, lenguajes de programación orientados 
+    a objetos. Los dos utilizan conceptos como encapsulación, herencia, polimorfismo y abstracción.</p>
+
+    <h4>Calculadora</h4>
+    <p>Operaciones</p>
+    <p>Sumar</p>
+    <p>Restar</p>
+    <p>Multiplicar</p>
+    <p>Dividir</p>
+    <button id="resultadoBtn">Resultado</button>
+    <p id="respuesta">Respuesta</p>
+    <script defer>
+        document.getElementById("resultadoBtn").addEventListener("click", function() {
+            var n1;
+            var n2;
+            var resp;
+            var op;
+            op = prompt("Elige la operacion a realizar");    
+            switch(op){
+                case "suma":
+                    n1 = prompt("ingresa valor 1");
+                    n1 = parseInt(n1);
+                    n2 = prompt("ingrese valor 2");
+                    n2 = parseInt(n2);
+                    resp = n1 + n2;
+                    document.getElementById("respuesta").innerHTML = n1+" + "+n2+" = "+ resp;
+                    break
+                case "resta":
+                    n1 = prompt("ingresa valor 1");
+                    n1 = parseInt(n1);
+                    n2 = prompt("ingrese valor 2");
+                    n2 = parseInt(n2);
+                    resp = n1 - n2;
+                    document.getElementById("respuesta").innerHTML = n1+" - "+n2+" = "+ resp;
+                    break
+                case "multiplicacion":
+                    n1 = prompt("ingresa valor 1");
+                    n1 = parseInt(n1);
+                    n2 = prompt("ingrese valor 2");
+                    n2 = parseInt(n2);
+                    resp = n1 * n2;
+                    document.getElementById("respuesta").innerHTML = n1+" * "+n2+" = "+ resp;
+                    break
+                case "division":
+                    n1 = prompt("ingresa valor 1");
+                    n1 = parseInt(n1);
+                    n2 = prompt("ingrese valor 2");
+                    n2 = parseInt(n2);
+                    resp = n1 / n2;
+                    document.getElementById("respuesta").innerHTML = n1+" / "+n2+" = "+ resp;
+                    break
+                default:
+                    break
+             }
+        })
+    </script>
+    <h4>Ingresa tu nombre y apellido</h4>
+    <button id="conca">Ingresar nombre</button>
+    <p id="nameconca">Nombre: </p>
+    <script>
+        document.getElementById("conca").addEventListener("click", function(){
+            let name;
+            let lastname;
+            name = prompt("name");
+            lastname = prompt("lastname");
+            document.getElementById("nameconca").innerHTML = "Tu nombre es "+ name +" "+ lastname;
+        })
+    </script>
+
+    <h4>Saber tipos de datos</h4>
+    <p>En esta parte se definieron 2 const con un nombre y edad</p>
+    <script>
+            const nombre = "Manuel";
+            const edad = 16;
+           document.writeln("El nombre utilizado Manuel y su tipo de dato es: " + typeof nombre);
+           document.writeln("La edad es 16 y su tipo de dato es: "+ typeof Number);
+    </script>
+
+    <h4>Clase objeto</h4>
+    <p>En esta parte veremos un objeto con 4 datos en los que 1 estara vacio</p>
+    <div id="contenidoObjeto"></div>
+
+    <script>
+        const miObjeto = {
+            numero: 64,
+            texto: "Hola, mundo",
+            esVerdad: true,
+            objetoVacio: {}
+        };
+
+        const contenedor = document.getElementById("contenidoObjeto");
+
+        let contenidoHTML = `
+            <p><strong>Número:</strong> ${miObjeto.numero}</p>
+            <p><strong>Texto:</strong> ${miObjeto.texto}</p>
+            <p><strong>Booleano:</strong> ${miObjeto.esVerdad}</p>
+            <p><strong>Objeto vacío:</strong> ${JSON.stringify(miObjeto.objetoVacio)}</p>
+        `;
+
+        contenedor.innerHTML = contenidoHTML;
+    </script>
+
+    <h4>Suma de multiplos de 3 y 5</h4>
+    <p>Ingresa un numero entero positivo, arriba de 10</p>
+    <button id="btmulti">Calcular suma</button>
+    <p id="suma">Total de la suma</p>
+
+    <script>
+        document.getElementById("btmulti").addEventListener("click", function () {   
+            let suma = 0;
+            var numero = prompt("Ingrese un numero");
+
+            for (let i = 1; i < numero; i++) {
+                if (i % 3 === 0 || i % 5 === 0) {
+                suma += i;
+                }
+            }
+
+            document.getElementById("suma").innerHTML = "La suma de los numeros menores de " + numero+ " es: "+ suma;
+        }) 
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
