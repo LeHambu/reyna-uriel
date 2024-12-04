@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 90%; /* Reducido de 80% a 90% */
+    max-width: 1200px; /* Añadido para limitar el ancho máximo */
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B1E54;
+    padding: 1rem 2rem;
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 35px;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.menu a:hover {
+    background-color: rgba(240, 240, 240, 0.2); /* Cambiado para un efecto más sutil */
+    color: #FFFFFF; /* Mantiene el texto blanco al hacer hover */
+}
+
+.hero {
+    margin-bottom: 2rem;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#anime-banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+.content-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-content {
+    flex: 7;
+}
+
+.sidebar {
+    flex: 3;
+}
+
+.latest-news, .upcoming-releases, .anime-events, .trending-topics {
+    background-color: #FFFFFF;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333333;
+    margin-bottom: 0.3rem; /* Aumentado de 0.2rem a 0.3rem */
+    font-size: 1.1rem; /* Aumentado de 1.05rem a 1.1rem */
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: black;
+    }
+
+.read-more {
+    background-color: #3B1E54;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 0.85rem;
+}
+
+.read-more:hover {
+    background-color: #2E1641;
+}
+
+#trending-topics-list {
+    list-style: none;
+    padding: 0;
+}
+
+#trending-topics-list li {
+    margin-bottom: 0.5rem;
+}
+#upcoming-anime-image, #anime-events-image {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    background-color: #9B7EBD;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu-elem {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.menu-icon:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-content, .sidebar {
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+

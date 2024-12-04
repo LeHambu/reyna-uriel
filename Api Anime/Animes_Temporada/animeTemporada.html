@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../Animes_Temporada/app.js" type="module"></script>
+    <title>Explorador de Temporadas</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Home/home.html">
+                    <img src="anime.jpg" alt="ANIME">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="/Anime news/animeNews.html">Anime News</a>
+                <a href="/Manga news/manganews.html">Manga News</a>
+                <a href="/Personajes Anime/personajesAnime.html">Personajes Anime</a>
+                <a id="anime-link" href="../Animes_Temporada/animeTemporada.html">Anime Temporadas</a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <h1>Explorador de Temporadas</h1>
+                <form id="season-form" class="season-form">
+                    <label for="year">Año:</label>
+                    <input type="number" id="year" placeholder="Ej. 2024" min="1900" max="2099" required>
+                    <label for="season">Temporada:</label>
+                    <select id="season" required>
+                        <option value="winter">Invierno</option>
+                        <option value="spring">Primavera</option>
+                        <option value="summer">Verano</option>
+                        <option value="fall">Otoño</option>
+                    </select>
+                    <button type="submit">Buscar</button>
+                </form>
+
+                <!-- Contenedor para mostrar los resultados -->
+                <div id="results-container" class="results-container"></div>
+            </div>
+        </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="menu-footer">
+                <li class="menu-elem">
+                    <a href="" class="menu-icon">Políticas de Privacidad</a>
+                </li>
+                <li class="menu-elem">
+                    <a href="" class="menu-icon">Términos de Servicio</a>
+                </li>
+                <li class="menu-elem">
+                    <a href="" class="menu-icon">Contáctenos</a>
+                    <a href="https://github.com/AlexandroAG">Uriel Reyna</a>
+				    <a href="https://github.com/LeHambu">Alexandro Gonzalez</a>
+					<a href="https://github.com/Gabriel1Garci">Gabriel Garcia</a>
+                </li>
+				<li>
+                <a href="https://github.com/2024-SEMII-DESV-1GS221/Gabriel-Garcia" class="menu-icon">Repositorio</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/Home/app.js" type="module"></script>
+    <title>Animes Jikan</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Home/home.html">
+                    <img src="anime.jpg" alt="ANIME">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="/Anime news/animeNews.html">Anime News</a>
+                <a href="/Manga news/manganews.html">Manga News</a>
+                <a href="/Personajes Anime/personajesAnime.html">Calendario Anime</a>
+                <a id="anime-link" href="../Animes_Temporada/animeTemporada.html">Anime Temporadas</a>
+            </div>
+        </nav>
+
+        <section class="intro">
+            <p>En esta página podrás encontrar una lista de animes de diferentes géneros.</p>
+        </section>
+
+        <div class="container">
+            <header class="search">
+                <input type="text" id="searchQuery" placeholder="Escribe aquí..." />
+                <select id="searchType">
+                    <option value="anime" selected>Buscar por Anime</option>
+                    <option value="character">Buscar por Personajes</option>
+                    <option value="genre">Buscar por Géneros</option>
+                </select>
+                <button type="button" id="searchButton">
+                    <img src="lupa.png" alt="Buscar" />
+                </button>
+                <div class="results-container"></div>
+                <!-- Los resultados se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="menu-footer">
+            <li class="menu-elem">
+                <a href="" class="menu-icon">Políticas de Privacidad</a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon">Términos de Servicio</a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon">Contáctenos</a>
+                <a href="https://github.com/LeHambu">Uriel Reyna</a>
+				<a href="https://github.com/Gabriel1Garci">Gabriel Garcia</a>
+            </li>
+                <li>
+                    <a href="https://github.com/2024-SEMII-DESV-1GS221/Gabriel-Garcia" class="menu-icon">Repositorio</a>
+                </li>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #D4BEE4;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B1E54;
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 35px;
+}
+
+.menu {
+    align-items: end;
+    display: flexbox;
+    gap: 30rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.menu a:hover {
+    background-color: #0205a89a;
+}
+
+.search {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    height: 20px;
+    transition: background-color 0.5s;
+}
+
+.search img:hover {
+    background-color: #024fa854;
+}
+.footer {
+    width: 100%;
+    background-color: #9B7EBD;
+    padding: 20px 0; /* Cambiamos min-height por padding para mejor control del espacio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: auto; /* Asegura que el footer se mantenga abajo */
+    gap: 10px; /* Espacio entre elementos del footer */
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Eliminamos el margen extra */
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre elementos del menú */
+}
+
+.menu-elem {
+    list-style: none;
+    margin: 0; /* Eliminamos márgenes extras */
+    padding: 0;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 16px; /* Reducimos el tamaño de la fuente */
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.3s;
+    padding: 5px 10px; /* Añadimos padding en lugar de margin */
+}
+.menu-icon:hover{
+    opacity: 1;
+}
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anime-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
+.anime-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.anime-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.anime-date {
+    font-size: 0.9rem;
+    color: #555;
+}
